@@ -1,35 +1,64 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+//1. PROPS
 
-function App() {
-  const [count, setCount] = useState(0)
+//import Student from "./Student.props.jsx"
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+// function App() {
+//  return(
+//  <>
+//     <Student name = "Spongebob" age = {30} isStudent = {true}/>
+//     <Student name = "Patrik" age= {25} isStudent = {false}/>
+//     <Student name = "Squidward" age = {50} isStudent = {false}/>
+//     <Student name = "Sandy" age = {25} isStudent = {true}/>
+//     < Student name = "Larry"/>
+//   </>)
+//   }
+
+// export default App
+
+
+//2. Conditional rendering
+
+
+// import UserGreeting from "./conditionalRendering/conditionalRendering.jsx";
+
+// function App()
+// {
+//   return (
+//     <>
+//       < UserGreeting isLoggedIn = {true} username = "Joby John"/>
+//     </>
+//   );
+// }
+
+// export default App;
+
+
+//3.Renedring Lists
+import List from "./renderingLists/renderingLists.jsx" 
+
+function App()
+{
+const fruits = [{id:1, name:"apple", calories: 95},
+              {id:2, name:"orange", calories: 45}, 
+              {id:3, name:"banana", calories: 105}, 
+              {id:4, name:"coconut", calories:159}, 
+              {id:5, name:"pineapple", calories:37}];
+
+
+const vegetables = [{id:6, name:"potatoes", calories: 100},
+                    {id:7, name:"celery", calories: 15}, 
+                    {id:8, name:"carrots", calories: 25}, 
+                    {id:9, name:"corn", calories:63}, 
+                    {id:10, name:"brocoli", calories:50}];
+
+  const meats = [];
+
+  return (<>
+  <List items={fruits} category = "Fruits"/>
+  <List items = {vegetables} category = "Vegetables"/>
+  <List items = {meats} category = "Meats"/>
+  </>
+  );
 }
 
-export default App
+export default App;
