@@ -1,0 +1,17 @@
+.container
+{
+    background-color: hsl(32, 48%, 75%);
+    width: 200px;
+    height: 450px;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 3px 3px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container input{
+    border-radius: 10px;
+}
+
+.container textarea{
+    height: 50px;
+}

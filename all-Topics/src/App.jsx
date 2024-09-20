@@ -102,15 +102,29 @@
 
 // export default App;
 
-import Counter from "./counterApp/counterApp.jsx";
+// import Counter from "./counterApp/counterApp.jsx";
 
+// function App()
+// {
+//   return(
+//     <>
+//     <Counter/>
+//     </>
+//   );
+// }
+
+// export default App;
+
+//6. onChange = event handler used primarily with form elements
+//              eg.<input>, <textarea>, <select>, <radio>
+//              Triggers a function every time the value of the input changes
+
+import OnChange from "./onChange/onChange.jsx";
 function App()
 {
-  return(
-    <>
-    <Counter/>
-    </>
-  );
+    return(
+      <OnChange/>
+    );
 }
 
 export default App;
