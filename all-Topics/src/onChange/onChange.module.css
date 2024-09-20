@@ -10,6 +10,7 @@
 }
 .container input{
     border-radius: 10px;
+    width: 100px;
 }
 
 .container textarea{

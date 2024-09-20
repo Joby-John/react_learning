@@ -18,7 +18,7 @@ function OnChange()
 
     const handleQuantityChange = (event)=>
     {
-        setQuantity(event.target.value);
+        setQuantity(event.target.value<=6&&event.target.value>0?event.target.value:1);
     }
 
     const handleCommentChange=(event)=>
@@ -41,7 +41,7 @@ function OnChange()
             <input value={name} onChange={handleNameChange}></input>
             <p>Name: {name}</p>
 
-            <input  value = {quantity} type="number" onChange={handleQuantityChange}></input>
+            <input  value = {quantity} type="number" min = "1" max = "6" onChange={handleQuantityChange}></input>
             <p>Quantity:{quantity}</p>
 
             <textarea value = {comment} onChange={handleCommentChange} placeholder="Delivery Instructions"></textarea>
