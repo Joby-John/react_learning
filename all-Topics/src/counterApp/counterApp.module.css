@@ -1,0 +1,56 @@
+.container{
+    background-color: hsl(84, 100%, 40%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:300px;
+    height: 300px;
+    margin: 30px;
+    font-size: 3rem;
+    border-radius: 30px;
+    color: hsl(32, 62%, 86%);
+    box-shadow: 3px 3px 5px hsl(120, 58%, 86%);
+}
+
+.number{
+    margin: 20px;
+}
+.buttonContainer{
+    background-color: rgb(68, 188, 148);
+    width: 90%;
+    display: flex;
+    align-items: center;
+    height: 70px;
+    justify-content: space-evenly;
+    border-radius: 50px;
+    box-shadow: 3px 7px 5px rgb(59, 88, 14);
+    
+}
+
+.buttonContainer button{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+}
+
+.increase{
+    background-color: hsl(120, 50%, 80%);
+}
+.decrease{
+    background-color: hsl(39, 54%, 70%);
+}
+.reset{
+    background-color: hsl(0, 100%, 80%);
+}
+
+.increase:active{
+    background-color: hsl(120, 50%, 90%);
+}
+.decrease:active{
+    background-color: hsl(39, 54%, 80%);
+}
+.reset:active{
+    background-color: hsl(0, 100%, 90%);
+}

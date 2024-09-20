@@ -34,30 +34,82 @@
 
 
 //3.Renedring Lists
-import List from "./renderingLists/renderingLists.jsx" 
+// import List from "./renderingLists/renderingLists.jsx" 
+
+// function App()
+// {
+// const fruits = [{id:1, name:"apple", calories: 95},
+//               {id:2, name:"orange", calories: 45}, 
+//               {id:3, name:"banana", calories: 105}, 
+//               {id:4, name:"coconut", calories:159}, 
+//               {id:5, name:"pineapple", calories:37}];
+
+
+// const vegetables = [{id:6, name:"potatoes", calories: 100},
+//                     {id:7, name:"celery", calories: 15}, 
+//                     {id:8, name:"carrots", calories: 25}, 
+//                     {id:9, name:"corn", calories:63}, 
+//                     {id:10, name:"brocoli", calories:50}];
+
+//   const meats = [];
+
+//   return (<>
+//   <List items={fruits} category = "Fruits"/>
+//   <List items = {vegetables} category = "Vegetables"/>
+//   <List items = {meats} category = "Meats"/>
+//   </>
+//   );
+// }
+
+// export default App;
+
+
+//4.click events in react
+//click event = an intercation when a user clicks on a specific element.
+//              We can respond to clicks by passing a callback to the onClick event handler
+
+
+// import Click from './clickEvents/clickEvents.jsx'
+
+
+// function App()
+// {
+//   return (<>
+//   < Click emoji = {"🌞"}/>
+//   </>)
+// }
+
+// export default App;
+
+
+//5. useState and Hook
+
+//React hook = Special function that allows functional components
+//             to use React features without writing class components(React v16.8)
+//              (useState, useEffect, useContext, useReducer, useCallBack, and more)
+
+//useState() = A React hook that allows the creation of a stateful variable
+//              and a setter function to update its value in the virtual DOM.
+//              [name, setName]
+
+//import UseState from "./useStateAndHook/useStateAndHook.jsx";
+// function App()
+// {
+//   return (
+//     <UseState/>
+//   );
+// }
+
+// export default App;
+
+import Counter from "./counterApp/counterApp.jsx";
 
 function App()
 {
-const fruits = [{id:1, name:"apple", calories: 95},
-              {id:2, name:"orange", calories: 45}, 
-              {id:3, name:"banana", calories: 105}, 
-              {id:4, name:"coconut", calories:159}, 
-              {id:5, name:"pineapple", calories:37}];
-
-
-const vegetables = [{id:6, name:"potatoes", calories: 100},
-                    {id:7, name:"celery", calories: 15}, 
-                    {id:8, name:"carrots", calories: 25}, 
-                    {id:9, name:"corn", calories:63}, 
-                    {id:10, name:"brocoli", calories:50}];
-
-  const meats = [];
-
-  return (<>
-  <List items={fruits} category = "Fruits"/>
-  <List items = {vegetables} category = "Vegetables"/>
-  <List items = {meats} category = "Meats"/>
-  </>
+  return(
+    <>
+    <Counter/>
+    </>
   );
 }
 
