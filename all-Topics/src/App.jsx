@@ -119,12 +119,30 @@
 //              eg.<input>, <textarea>, <select>, <radio>
 //              Triggers a function every time the value of the input changes
 
-import OnChange from "./onChange/onChange.jsx";
+// import OnChange from "./onChange/onChange.jsx";
+// function App()
+// {
+//     return(
+//       <OnChange/>
+//     );
+// }
+
+// export default App;
+
+
+
+//7. Updater function  = A function passed as an argument to setState() usually 
+//                       eg. setYear(arrow function )
+//                       Allow for safe updates based on the previous state
+//                       used with multiple state updates and asynchronous functions
+//                       good practice to use updater functions
+
+import Updater from "./updaterFuntion/updater.jsx";
 function App()
 {
-    return(
-      <OnChange/>
-    );
+  return (
+    
+    <Updater/>
+  )
 }
-
 export default App;
