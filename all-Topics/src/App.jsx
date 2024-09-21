@@ -137,12 +137,48 @@
 //                       used with multiple state updates and asynchronous functions
 //                       good practice to use updater functions
 
-import Updater from "./updaterFuntion/updater.jsx";
+// import Updater from "./updaterFuntion/updater.jsx";
+// function App()
+// {
+//   return (
+    
+//     <Updater/>
+//   )
+// }
+// export default App;
+
+
+//8. Update Objects in state
+
+// import ObjectState from "./objectsState/objectState.jsx";
+// function App()
+// {
+//   return (
+//     <ObjectState/>
+//   );
+// }
+
+// export default App;
+
+//9. Array state
+
+// import ArrayState from "./arrayState/arrayState.jsx";
+// function App()
+// {
+//   return (
+//     <ArrayState/>
+//   );
+// }
+
+// export default App;
+
+//10 state of array of objects
+import ArrayOfObjects from "./arrayOfObject/arrayOfObject.jsx";
 function App()
 {
   return (
-    
-    <Updater/>
-  )
+    <ArrayOfObjects/>
+  );
 }
+
 export default App;
