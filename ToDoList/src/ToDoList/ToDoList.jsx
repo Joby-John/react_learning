@@ -30,10 +30,8 @@ function ToDoList()
     {
         if(index>0)
         {
-            let updatedTasks = [...tasks];
-            let temp = updatedTasks[index];
-            updatedTasks[index] = updatedTasks[index-1];
-            updatedTasks[index-1] = temp;
+            const updatedTasks = [...tasks];
+            [updatedTasks[index], updatedTasks[index-1]] = [updatedTasks[index-1], updatedTasks[index]];
 
             setTasks(updatedTasks);
 
@@ -46,10 +44,9 @@ function ToDoList()
     {
         if(index<tasks.length-1)
             {
-                let updatedTasks = [...tasks];
-                let temp = updatedTasks[index];
-                updatedTasks[index] = updatedTasks[index+1];
-                updatedTasks[index+1] = temp;
+                const updatedTasks = [...tasks];
+                [updatedTasks[index], updatedTasks[index+1]] = [updatedTasks[index+1], updatedTasks[index]]
+                
     
                 setTasks(updatedTasks);
     
