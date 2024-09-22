@@ -172,12 +172,47 @@
 
 // export default App;
 
-//10 state of array of objects
-import ArrayOfObjects from "./arrayOfObject/arrayOfObject.jsx";
+// //10. state of array of objects
+// import ArrayOfObjects from "./arrayOfObject/arrayOfObject.jsx";
+// function App()
+// {
+//   return (
+//     <ArrayOfObjects/>
+//   );
+// }
+
+// export default App;
+
+
+//11. useEffect() = React Hook that tells React DO SOME CODE WHEN (pick one):
+//                  This component re-renders
+//                  This component mounts(when a component is created and appended to DOM)
+//                  The state of a value
+
+//useEffect(function, [dependencies])
+
+//1. useEffect(() => {}) //Runs after every re-render
+//2. useEffect(() => {}, []) //Runs only on Mount
+//3. useEffect(() =>{}, [value]) //Runs on mount + when value changes
+
+
+//USES
+// #1 Event Listeners
+// #2 DOM manipulation
+// #3 Subscriptions (real-time updates)
+// #4 Fetching Data from an API
+// #5 Clean up when a component unmounts 
+
+import UseEffect from "./useEffectHook/useEffect.jsx";
+import WindowSizeDisplayer from "./useEffectWindowSize/windowSize.jsx";
+
 function App()
 {
   return (
-    <ArrayOfObjects/>
+    <>
+    <UseEffect/><br/><br/>
+    <WindowSizeDisplayer/>
+    </>
   );
 }
 
