@@ -1,0 +1,13 @@
+body{
+  background-image: url('./assets/monaco.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:scroll;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
